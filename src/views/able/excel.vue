@@ -47,6 +47,7 @@ const generateData = (
 
 const columns = generateColumns(10);
 const data = generateData(columns, 1000);
+data[0]["column-0"] = new Date("2023/07/25 12:00");
 
 const exportExcel = () => {
   const res: string[][] = data.map((item: DataItem) => {
